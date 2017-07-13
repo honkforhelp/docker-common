@@ -1,7 +1,7 @@
 # docker-common
 ## A Common Starting Point for Some Dockerized Apps
 
-Believe it or not, several languages and frames are highly 
+Believe it or not, several languages and frameworks are highly 
 interdependent.
 
 Did you know that many NPM packages require Python to build
@@ -14,11 +14,11 @@ to the business of making your app go.
 
 ## What's Included?
 
-- Python 2.7.1
-- NodeJS 6.9.1 (LTS)
-- Ruby 2.3.1
-- Nginx 1.10.0
-- PosgreSQL 9.5.4
+- Python 2.7.13
+- NodeJS 6.11.1 (LTS)
+- Ruby 2.3.4
+- Nginx 1.10.3
+- PosgreSQL 9.5.7
 - Some common libraries like ImageMagick
 
 ## Why those things?
@@ -43,7 +43,7 @@ one like so:
 
 ```Dockerfile
 # We highly suggest you pin your FROM to a specific verson of this image
-FROM honkdev/common:1.0.0
+FROM honkdev/common:1.0.1
 
 # Get X!!
 RUN apt-get -y update && apt-get -y install X
